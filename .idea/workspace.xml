@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97c2b15e-e271-49a9-ae2d-b501e6534f4c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1u0l8dkQGZnQrgmRuE6vuh589D3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pod-3.1.3-team-4" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/rosetta-poster" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/img/blog/rosetta-week-1" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/img/blog" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog_posts/rosetta-week-1" />
+      <recent name="$PROJECT_DIR$/blog_posts" />
+      <recent name="$PROJECT_DIR$/blog_posts/summer-plans" />
+      <recent name="$PROJECT_DIR$/img/blog/summer-plans" />
+      <recent name="$PROJECT_DIR$/blog_posts/tic-tac-toe-project" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97c2b15e-e271-49a9-ae2d-b501e6534f4c" name="Default Changelist" comment="" />
+      <created>1623810229401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623810229401</updated>
+      <workItem from="1623810237194" duration="2031000" />
+      <workItem from="1624151357913" duration="1868000" />
+      <workItem from="1624328902774" duration="3115000" />
+      <workItem from="1624923239588" duration="3590000" />
+      <workItem from="1625099345594" duration="1870000" />
+      <workItem from="1625361304077" duration="2410000" />
+      <workItem from="1625531440292" duration="345000" />
+      <workItem from="1625532664753" duration="4134000" />
+      <workItem from="1625711144682" duration="2983000" />
+      <workItem from="1627868040837" duration="124000" />
+      <workItem from="1628090404016" duration="14000" />
+      <workItem from="1628294971713" duration="26047000" />
+      <workItem from="1628611135323" duration="2747000" />
+      <workItem from="1629658609762" duration="2532000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
