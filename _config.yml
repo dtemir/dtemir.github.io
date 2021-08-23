@@ -1,10 +1,10 @@
-title: damir temir! # name of the site
+title: damir temir # name of the site
 author: damir temir # name of site's author
 email: damir@temir.dev # email of site's author
 url: https://temir.dev # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
-  A (nearly) no-CSS, fast, minimalist Jekyll theme.
+  My personal blog built with Jekyll and the no-style-please theme
 
 permalink: /:slug.html
 
