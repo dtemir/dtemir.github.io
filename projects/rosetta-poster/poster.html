@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <title>Building Hydrogen Bonding Networks with Protein Sequence Design Model</title>
+    <link rel="stylesheet" href="poster.css">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+    <!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.2.0/styles/default.min.css">
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <style type="text/css">
+  html { font-size: 1.15rem }
+</style>
+  </head>
+
+  <body vocab="http://schema.org/" typeof="ScholarlyArticle">
+    <header role="banner">
+      <aside>
+          <a href="https://www.rosettacommons.org/"><img src="rosetta.png" alt="Rosetta Commons logo"></a>
+      </aside>
+      <div>
+        <h1 property="headline">Building Hydrogen Bonding Networks with Protein Sequence Design Model</h1>
+                  <h2 property="alternativeHeadline">An entirely <i>learned</i> method for protein sequence design can produce hydrogen bonding networks in protein cores</h2>
+                <address>
+		  <a property="author">Damir Temir<sup>a</sup></a>
+		  <a property="author">Christian Choe<sup>b</sup></a>
+		  <a property="authro">Possu Huang<sup>c</sup></a>
+		  <br />  <sup>a</sup><a property="sourceOrganization">Summer Intern</a>
+		  <sup>b</sup><a property="sourceOrganization">Mentor</a>
+		  <sup>c</sup><a property="sourceOrganization">Primary Investigator</a>
+        </address>
+        <span class="publication-info">
+                      <span property="publisher">Unpublished</span>,
+            <time pubdate property="datePublished" datetime="2020-09-08">September 8, 2020</time>
+                  </span>
+      </div>
+      <aside>
+	<a href="https://temir.dev/projects/rosetta-poster/poster"><img src="frame.png" alt="QR code to the poster"></a>
+      </aside>
+      <aside>
+          <a href="http://www.proteindesign.org/"><img src="stanford-logo.png" alt="Stanford University Logo"></a>
+      </aside>
+    </header>
+
+    <main property="articleBody">
+
+    <article property="abstract">
+      <header><h3>Abstract</h3></header>
+      
+      <p>The development of <i>de novo</i> proteins with the application of Computational Protein Design has been rapidly growing in the last few decades, while the primary strategy to achieve new proteins remains the same:</p>
+
+      <ul>
+        <li>Decide on a class of structure.</li>
+        <li>Use software like Rosetta to design thousands of potential conformations.</li>
+        <li>Minimize their free energies.</li>
+        <li>Iterate.</li>
+      </ul>
+
+      <p>
+        However, with the rising amounts of crystal-structure data, more automated Machine Learning Models for Protein Structure Prediction are emerging.
+        One example of a successful model explores the tractability of building side-chain conformers in a structure based context.
+      </p>
+
+      <p>
+        The algorithm lacked the ability to control the design process to produce desired chemical structures, such as internal Hydrogen Bonding Networks between side-chains.
+      </p>
+
+      <p>
+        The resulted functionality can take in a file with a command for each residue, thus limiting their potential identities and guiding the design in a specific way.
+      </p>
+
+      <p>
+        Below is an example of a resfile that sets constraints on particular residue during the design process.
+        The first command <code>ALLAA</code> (Allow All Amino Acids) is a default constraint for all residues not mentioned after the <code>START</code> keyword.
+        Following are command for particular residues, such as residue #65 is constrained to <em>polar amino acids</em>.
+      </p>
+
+      <pre style="white-space: pre-line;">
+        <code class="language-plaintext" style="padding: 0em;">ALLAA
+        START
+        34 ALLAAwc
+        65 POLAR
+        36 - 38 ALLAAxc
+        34 TPIKAA C
+        55 - 58 NOTAA EHKNRQDST
+        20 NATRO</code></pre>
+
+    </article>
+
+    <article>
+      <header><h3>Protein Sequence Design Algorithm</h3></header>
+      <p>
+        The <a href="https://github.com/ProteinDesignLab/protein_seq_des" target="_blank">Protein Sequence Design Algorithm</a> is a protein design tool that conditions on local backbone structure and chemical environment to produce conformations that generalize to backbones with unseen topologies, producing <em>de novo</em> sequences
+      </p>
+
+      <figure>
+        <img src="algorithm-process.png" alt="An image explaining the steps for protein sequence design with the algorithm. It first extracts the local environment around protein residue, then mak residue atoms. Then trains the classifier to recover distributions over amino acid identities. Samples from the distribution. Then, conditioned on the residue type it samples, it samples rotamer angles.">
+
+        <figcaption>The process of designing with the Protein Sequence Design Algorithm (<i>Source: <a href="https://www.biorxiv.org/content/10.1101/2020.01.06.895466v3">Protein Sequence Design with a Learned Potential</a></i>)</figcaption>
+      </figure>
+
+      <p>
+        The algorithm uses a 3-Dimensional Convolutional Neural Network that serves as a classifier trained on CATH 4.2 S95 domains.
+        The model can predict amino acid types with 57.3% accuracy using the conditional model.
+      </p>
+
+      <figure>
+        <img src="prediction-results.png" alt="An image explaining the steps for protein sequence design with the algorithm. It first extracts the local environment around protein residue, then mak residue atoms. Then trains the classifier to recover distributions over amino acid identities. Samples from the distribution. Then, conditioned on the residue type it samples, it samples rotamer angles.">
+
+        <figcaption>Rotamer repacking accuracy for buried core and solvent-exposed residues (<i>Source: <a href="https://www.biorxiv.org/content/10.1101/2020.01.06.895466v3">Protein Sequence Design with a Learned Potential</a></i>)</figcaption>
+      </figure>
+
+
+    </article>
+
+    <article>
+      <header><h3>Sampling Process</h3></header>
+
+      <p>
+        The algorithm expects that the likelihood of a given side-chain identity and the following conformation is dictated by the surrounding environment.
+        It defines the environment \(env_i\) as the combination of the backbone atoms \(X\) and neighboring residues \(y_{NB(i)}\).
+      </p>
+
+      $$ p(y_i \mid env_i)= p(r_i \mid env_i) \prod\limits_{j=1}^4 p({\chi_j}_i \mid {\chi_1}_{:j-1}, r_i, env_i)$$
+
+      <p>where \(r_i \in \{1...20\}\) is the amino acid type of residue \( i \) and \({\chi_1}_i, {\chi_2}_i, {\chi_3}_i, {\chi_4}_i \in [-180^{\circ}, 180^{\circ}]\) are the torsion angles for the side chain.</p>
+
+      <p>
+        The algorithm samples a residue type based on the provided model distribution.
+        That sample is then used to predict for the torsion angles, from which the algorithm samples in an autoregressive fashion.
+      </p>
+
+    </article>
+
+    <article>
+      <header><h3>Building the Interface</h3></header>
+
+      <p>
+        The output of the conditional and baseline models is a <strong>multi-dimensional matrix</strong> known as a <em>tensor</em>.
+        The tensor is populated with un-normalized log probabilities of possible residue types for each particular space.
+      </p>
+
+      <pre style="white-space: pre-line;"><code class="language-python" style="padding: 0em;">from torch.distributions.categorical import Categorical
+          ...
+          self.logits = get_energy(self.pose) # gets the un-normalized log probabilities from the models
+          ...
+          self.sample(self.logits, idx) # calls sampling with the tensor
+          ...
+          dist = Categorical(logits=logits[idx]) # creates a distribution object from which the sample is drawn</code></pre>
+
+      The interface is based on modifying those un-normalized log probabilities before they are used to create a distribution object to draw a sample
+
+    </article>
+
+    <article>
+      <header><h3>Results</h3></header>
+
+      <p>The results show that constraining certain residues inside the core of the protein can result in the model building chemical structures like hydrogen bonding networks</p>
+
+      <figure>
+        <img src="ex2_results.png" alt="An all-beta protein with hydrogen bonds between core side-chains.">
+
+        <figcaption>The resulted all-beta structure <em>3mx7_gt</em> with internal hydrogen bonding networks produced with the resfile function (<i>Source: <a href="https://github.com/ProteinDesignLab/protein_seq_des/tree/master/seq_des/util" target="_blank">GitHub Documentation</a></i>)</figcaption>
+      </figure>
+
+      <hr/>
+
+      <figure>
+        <img src="ex3_results.png" alt="An all-beta protein with no hydrogen bonds in the core, showing that all polar side-chains are produced in the external part.">
+
+        <figcaption>The designed all-beta structure <em>3mx7_gt</em> without using the resfile function (<i>Source: <a href="https://github.com/ProteinDesignLab/protein_seq_des/tree/master/seq_des/util" target="_blank">GitHub Documentation</a></i>)</figcaption>
+      </figure>
+    </article>
+
+    <article>
+      <header><h3>More Results</h3></header>
+
+      <p>The model also produces more polar side-chains in the core if the neighboring residues are set to polar amino acids as the distribution tends to shift.</p>
+
+      <figure>
+        <img src="ex6_results.png" alt="An all-alpha protein with hydrogen bonds between core side-chains.">
+
+        <figcaption>The resulted all-alpha structure <em>1bkr_gt</em> with internal hydrogen bonding networks produced with the resfile function (<i>Source: <a href="https://github.com/ProteinDesignLab/protein_seq_des/tree/master/seq_des/util" target="_blank">GitHub Documentation</a></i>)</figcaption>
+      </figure>
+
+      <hr/>
+
+      <figure>
+        <img src="ex5_results.png" alt="An all-alpha protein with no hydrogen bonds in the core, showing that all polar side-chains are produced in the external part.">
+
+        <figcaption>The designed all-alpha structure <em>1bkr_gt</em> without using the resfile function (<i>Source: <a href="https://github.com/ProteinDesignLab/protein_seq_des/tree/master/seq_des/util" target="_blank">GitHub Documentation</a></i>)</figcaption>
+      </figure>
+    </article>
+
+    </main>
+
+    <footer>
+      <address class="monospace">  <a href="https://github.com/ProteinDesignLab/protein_seq_des/tree/master/seq_des/util">Extensive Documentation</a>
+</address>
+      <address class="monospace">  damir@temir.dev
+</address>
+                    <span class="credits">
+          Based on an <a href="https://github.com/cpitclaudel/academic-poster-template" target="_blank">open poster template</a>
+        </span>
+          </footer>
+  </body>
+</html>
