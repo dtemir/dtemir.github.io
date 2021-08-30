@@ -33,8 +33,11 @@ their summer 2020 internships. So MLH decided to give them an opportunity to sti
 The three tracks MLH offers today for the Full Fellowship are:
 
 * Open Source
+  * Help open source projects like [scikit-learn](https://github.com/scikit-learn/scikit-learn) to improve
 * Software Engineering
-* Production Engineering
+  * Work with a corporate or government organization on their industry-level software
+* Production Engineering (by Facebook)
+  * Do system engineering to ensure that products are reliable and scalable 
 
 ## What is the MLH Pre-Fellowship?
 
@@ -46,25 +49,51 @@ But the idea remains the same.
 The program is aimed at those who would like to have a taste of MLH before committing to 12 weeks of work.
 It also helps build a portfolio of projects through short hackathons and teamwork.
 
+## What are the benefits?
+
+It's important to know what you sign up for before committing weeks of work to it.
+So I want to give you a quick list of benefits that you get from doing the Pre-Fellowship:
+
+* Networking with other developers who aspire for the same things (jobs, projects, career growth, etc.)
+* Sense of the industry (stress from deadlines and close communication with others)
+* New projects for the resume
+* Advantage when applying for the Fellowship (you have already proved yourself as a prospective candidate)
+  * You get to skip to the second round of the interview without having to take the behavioral assessment
+
+There is also another major advantage of the MLH Fellowship compared to industry. 
+**You are not discriminated based on who you are or where you are in life.**
+Some companies look only for particular candidates when it comes to internships, 
+such as those who reside in North America, have legal status, or in a particular year of college (usually juniors).
+
+I'm happy to share that MLH doesn't base its decisions on residency, age, or some other nonsense. 
+Instead, they look for your passion for programming and what you can bring to the program (diversity, unique perspectives,
+experience, etc.). Sounds like that's how it should work, right?
+
+So these are the most important things to have when applying for the Pre-Fellowship:
+
+* Solid GitHub profile with a history of commits
+* Good essay where you share why you want to work with MLH
+* Decent communication skills to show that you can freely talk to strangers (a rare skill for CS majors sometimes)
+
 ## How does it work?
 
 There were around 50 people in the program. We were split in five *pods* of around 10 members.
-Each pod had a coach who was the person we worked with daily, and we also had a mentor to whom we could go with problems.
+Each pod had a *coach* who was the person we worked with daily, and we also had a *mentor* to whom we could go with problems.
 
 My pod was numbered [3.1.3](https://github.com/orgs/MLH-Fellowship/teams/pod-3-1-3) and we called it *Practically PI*.
 
 A general timeline for our work together would be this:
 
-- Week 1. 
+- Week 1. W
    * Meet other members and have 1:1 meetings with all
    * Develop the [Jekyll website template](https://github.com/MLH-Fellowship/pod-3.1.3-portfolio) together as a pod
-   * Participate in the [Pre-Fellowship Orientation Hackathon](https://pre-fellowship-orientation-3.devpost.com/) (I actually won this hackathon :D)
+   * Participate in the [Pre-Fellowship Orientation Hackathon](https://pre-fellowship-orientation-3.devpost.com/) (I actually won this one)
 - Week 2.
    * Split up into smaller teams to work on the second hackathon
    * Do *spikes* to figure out what technologies you might want to use for the group projects
 - Week 3.
    * Finalize the tech stack used in the group project (for us, it was Discord.js with GitHub API deployed to Linode with a CockroachDB database)
-   * Made significant progress in the project
+   * Make significant progress in the project
 - Week 4.
    * Do a final sprint to finish the project
    * Record a demo, write up a README, create the styling
@@ -76,7 +105,7 @@ work environment more effective and comfortable. Every Friday we would have a **
 each other the things we are passionate about.
 
 For the show-and-tell, I talked about **Deep Learning in Protein Design**, explaining the [AlphaFold 2](https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology).
-Others taught me about NPM modules, stylizing with Bootstrap, Streamlit, and numerous things.
+Others taught me creating NPM modules, stylizing with Bootstrap, Streamlit, and numerous things.
 
 ## How does it help?
 
@@ -85,12 +114,12 @@ getting experience working in a team.
 
 At the end of the program, I had a solid project on which I worked with two other developers. 
 I used a new language for me, JavaScript, to build a remarkable project, incorporating things I would have never used,
-such as Discord.js, Octokit.js, Linode, CockroachDB, GitHub Projects, and Lighthouse.
+such as Discord.js, Octokit.js, Linode, CockroachDB, GitHub Projects, and Lighthouse[^3].
 
-Having done this program, I'm just happy to share this general letter 
+Having done this program, I'm just happy to share this letter from MLH's CEO Swift with you 
 (which was probably sent to all the participants, but I still appreciate it)
 
-![Graduation Letter from MLH's CEO Swift](../assets/img/graduation_letter_pre_fellowship.png)
+![Graduation Letter from MLH's CEO Swift](../assets/img/graduation_letter_pre_fellowship.png){:.ioda}
 
 ---
 {: data-content="footnotes"}
@@ -98,3 +127,5 @@ Having done this program, I'm just happy to share this general letter
 [^1]: Hackathon is a type of event where people work together (or individually) to crete software and/or hardware projects in a limited amount of time, usually competing for fun (and prizes)
 
 [^2]: Stay posted for an update for their latest collaboration with GitHub (hint: I'm a part of it)
+
+[^3]: We called it [*GitCord*](https://github.com/MLH-Fellowship/gitcord-bot). It is a Discord Bot that lets you write discussion posts (useful for writing daily stand-up notes for the Pre-Fellowship). You can find the demo on [Devpost](https://devpost.com/software/gitcord)
