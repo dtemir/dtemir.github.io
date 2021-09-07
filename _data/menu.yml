@@ -15,12 +15,12 @@ entries:
       show_more_text: See archive...
       show_more_url: archive.html
 
-  - title: special projects
+  - title: work experience
     post_list:
-      category: projects
+      category: experience
       show_more: true
       show_more_text: See more projects...
-      show_more_url: projects-archive.html
+      show_more_url: work-archive.html
 
   - title: links
     entries:

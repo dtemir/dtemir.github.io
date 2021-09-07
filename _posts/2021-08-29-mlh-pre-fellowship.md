@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MLH Pre-Fellowship
+category: experience
 ---
 
 I was fortunate enough to be in the first ever [**MLH Pre-Fellowship**](https://fellowship.mlh.io/programs/prep) 
@@ -14,6 +15,14 @@ and **met awesome people** (yeah, that was the best part)!
 
 Let me tell you a little about the experience and why it is a revolutionary program for those who can't afford 
 traditional industry-like IT experience
+
+## Table of contents
+ - [What is MLH?](#what-is-mlh)
+ - [What is the MLH Fellowship?](#what-is-the-mlh-fellowship)
+ - [What is the MLH Pre-Fellowship](#what-is-the-mlh-pre-fellowship)
+ - [What are the benifits?](#what-are-the-benefits)
+ - [How does it work?](#how-does-it-work)
+ - [How does it help?](#how-does-it-help)
 
 ## What is MLH?
 
@@ -48,6 +57,9 @@ But the idea remains the same.
 
 The program is aimed at those who would like to have a taste of MLH before committing to 12 weeks of work.
 It also helps build a portfolio of projects through short hackathons and teamwork.
+
+![Pod 3.1.3 Group Photo in Zoom](../assets/img/pod_photo.png)
+*regular pod meeting in zoom*
 
 ## What are the benefits?
 
@@ -84,7 +96,7 @@ My pod was numbered [3.1.3](https://github.com/orgs/MLH-Fellowship/teams/pod-3-1
 
 A general timeline for our work together would be this:
 
-- Week 1. W
+- Week 1.
    * Meet other members and have 1:1 meetings with all
    * Develop the [Jekyll website template](https://github.com/MLH-Fellowship/pod-3.1.3-portfolio) together as a pod
    * Participate in the [Pre-Fellowship Orientation Hackathon](https://pre-fellowship-orientation-3.devpost.com/) (I actually won this one)
