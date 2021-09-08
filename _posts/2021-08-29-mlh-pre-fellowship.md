@@ -19,8 +19,8 @@ traditional industry-like IT experience
 ## Table of contents
  - [What is MLH?](#what-is-mlh)
  - [What is the MLH Fellowship?](#what-is-the-mlh-fellowship)
- - [What is the MLH Pre-Fellowship](#what-is-the-mlh-pre-fellowship)
- - [What are the benifits?](#what-are-the-benefits)
+ - [What is the MLH Pre-Fellowship?](#what-is-the-mlh-pre-fellowship)
+ - [What are the benefits?](#what-are-the-benefits)
  - [How does it work?](#how-does-it-work)
  - [How does it help?](#how-does-it-help)
 
