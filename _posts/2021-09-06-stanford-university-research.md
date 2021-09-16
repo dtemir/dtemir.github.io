@@ -14,11 +14,11 @@ Just a quick takeaway: doing research is awesome and everyone should try to do s
 
 ## Table of contents:
 * [Overview](#overview)
-* Rosetta
-* RosettaCommons
-* Protein Design
-* Research
-* Outcomes
+* [Rosetta](#rosetta)
+* [RosettaCommons](#rosettacommons)
+* [Protein Design](#protein-design)
+* [Research](#research)
+* [Outcomes](#outcomes)
 
 ## Overview
 
@@ -32,8 +32,57 @@ The result was a poster titled
 [![My poster titled Building Hydrogen Bonding Networks with Protein Sequence Design Model that covers my work on the project during the summer](../assets/img/rosetta_poster.png)](https://temir.dev/projects/rosetta-poster/poster)
 *try clicking on the image*
 
+## Rosetta
+
+First, [Rosetta](https://new.rosettacommons.org/docs/latest/Home) is a cluster of software with algorithms for computational modeling and analysis of protein structures.[^2]
+Today, it is used to do things like: 
+* _de novo protein design_
+* _enzyme design_
+* _ligand docking_
+* _structure prediction_
+
+It first started in the Baker Lab of [Dr. David Baker](https://www.ipd.uw.edu/people/ipd-faculty-staff/david-baker/) at the University of Washington.
+
+Today there is a Python wrapper/interface for it, called [PyRosetta](https://www.pyrosetta.org/).
+
+The goals for Rosetta are to:
+* learn more about macromolecular interactions
+* design new proteins
+* develop an efficient way to search conformation and sequence space[^3]
+* find a more useful energy function[^4]
+
+
+## RosettaCommons
+
+![Rosetta Commons Logo](../assets/img/rosetta.png)
+
+RosettaCommons is an organization of more than 50 universities and institutes around the world who use Rosetta in their research.[^5].
+The Rosetta source code belongs to _all_ members of RosettaCommons, which means that they pull their efforts together to develop it.
+
+RosettaCommons is also the organization that benefits from licensing the Rosetta software. 
+By selling the software to big companies, they are able to host conferences, support labs, and pay interns like me.
+
+The lab I worked at this summer is a part of RosettaCommons. 
+Stanford University's Huang Lab is into de novo protein design, 
+trying to create new platforms with Machine Learning.
+
+## Protein Design
+
+Proteins are of immerse significance to humans. 
+They are used for structure, function, and management of the body's various tissues and organs.
+
+Design proteins is a still new field in Bioengineering.
+But there have been big steps in developing ways to build proteins that we design ourselves.
+
+## Research
+
+## Outcomes
 
 ---
 {: data-content="footnotes"}
 
 [^1]: Hydrogen bond is a type of chemical interaction between two atoms that have positive and negative charges. Protein cores do not usually have hydrogen bonds because the amino acids inside tend to be hydrophobic, which means they do not carry charge. Internal hydrogen bonding networks are therefore unusual for proteins and show how much *specificity* the project I have worked on can bring to protein design.   
+[^2]: By the official [RosettaCommons](https://www.rosettacommons.org/software) website.
+[^3]: Conformation and sequence spaces are vast in protein design. Imagine a protein of 100 amino acids. Each amino acid can have one of 20 traditional identities. 100 to the power of 20 is the number of possible amino acid sequences. This is a vast number that is impossible to crack down with brute force.
+[^4]: An energy function is a type of function that can tell us whether a protein structure is efficient. It takes into account many chemical theories to determine whether a structure is stable. It usually serves as a guide for us to see whether a structure is going to work, but it is inaccurate due to the limited knowledge base.
+[^5]: By the official [RosettaCommons](https://www.rosettacommons.org/about) website
