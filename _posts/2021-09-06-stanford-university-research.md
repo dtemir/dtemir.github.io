@@ -56,27 +56,60 @@ The goals for Rosetta are to:
 
 ![Rosetta Commons Logo](../assets/img/rosetta.png)
 
-RosettaCommons is an organization of more than 50 universities and institutes around the world who use Rosetta in their research.[^5].
+RosettaCommons is an organization of more than 50 universities and institutes around the world who use Rosetta in their research.[^5]
 The Rosetta source code belongs to _all_ members of RosettaCommons, which means that they pull their efforts together to develop it.
 
 RosettaCommons is also the organization that benefits from licensing the Rosetta software. 
 By selling the software to big companies, they are able to host conferences, support labs, and pay interns like me.
+However, they provide the software for free to people who want to use it in academic purposes.
 
 The lab I worked at this summer is a part of RosettaCommons. 
 Stanford University's Huang Lab is into de novo protein design, 
-trying to create new platforms with Machine Learning.
+trying to create new design platforms with Machine Learning.
 
 ## Protein Design
 
 Proteins are of immerse significance to humans. 
 They are used for structure, function, and management of the body's various tissues and organs.
 
-Design proteins is a still new field in Bioengineering.
-But there have been big steps in developing ways to build proteins that we design ourselves.
+Designing proteins is a still new field in Bioengineering.
+But there have been big steps in developing ways to build proteins from scratch.
+All of them require evaluting the structures with already mentioned energy functions.
+
+![A screenshot of a protein modeled in PyMol](../assets/img/ex4_results.png)
+*a modeled version of an alpha-beta protein in PyMol*
 
 ## Research
 
+So my research was about using the output of the Convolutional Neural Network developed by students at Stanford University and adjust it to bring specificity to the protein design process.
+The way the **[Protein Sequence Design Algorithm](https://github.com/ProteinDesignLab/protein_seq_des)** uses its Convolutional Neural Network is by sampling a random residue on a protein, such as a single amino acid space from within a long sequenced protein, and predicting the possible types of amino acids for it. Once it has a distribution of possible amino acid types for that particular residue, it samples one of them to replace the residue with it.
+This way, the algorithm iterates over the algorithm many times until the solution starts to converge.[^6]
+
+![An image describing the algorithm process. The algorithm reads the environment around a particular residue (amino acid piece) and puts it into the Convolutional Neural Network that then produces a distribution of possible amino acids from which the algorithm samples to replace that residue](../assets/img/algorithm-process.png)
+*the algorithm process*
+
+My research was based on building an additional module, called [Resfile](https://github.com/ProteinDesignLab/protein_seq_des/tree/master/seq_des/util), to take a file like this
+
+```
+ALLAA # set a default command for all residues not listed below
+START
+34 ALLAAwc # allow all amino acids at residue #34
+65 POLAR # allow only polar amino acids at residue #65
+36 - 38 ALLAAxc # allow all amino acids except cysteine at residues #36 to #38 (including)
+34 TPIKAA C # set the initial pose sequence postion at residue #34 to cysteine
+55 - 58 NOTAA EHKNRQDST # disallow the listed amino acids at residues #55 to #58
+20 NATRO # do not design the residue #20 at all
+```
+
+and produce a protein with all those constraints.
+
 ## Outcomes
+
+The outcomes of my research were:
+
+* Learning many things about Protein Design and Computational Biology
+* Creating my first Research Poster
+* Writing code that will be useful for the whole field
 
 ---
 {: data-content="footnotes"}
@@ -85,4 +118,5 @@ But there have been big steps in developing ways to build proteins that we desig
 [^2]: By the official [RosettaCommons](https://www.rosettacommons.org/software) website.
 [^3]: Conformation and sequence spaces are vast in protein design. Imagine a protein of 100 amino acids. Each amino acid can have one of 20 traditional identities. 100 to the power of 20 is the number of possible amino acid sequences. This is a vast number that is impossible to crack down with brute force.
 [^4]: An energy function is a type of function that can tell us whether a protein structure is efficient. It takes into account many chemical theories to determine whether a structure is stable. It usually serves as a guide for us to see whether a structure is going to work, but it is inaccurate due to the limited knowledge base.
-[^5]: By the official [RosettaCommons](https://www.rosettacommons.org/about) website
+[^5]: By the official [RosettaCommons](https://www.rosettacommons.org/about) website.
+[^6]: It might take hours for the algorithm to run on a moderately long sequence for 2,500 iterations that it usually requires for it to converge. I would prepare the design I want to run during the day, and submit the jobs for designs to the Stanford server before going to bed. That way I would get the results in the morning. 
