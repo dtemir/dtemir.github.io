@@ -51,16 +51,23 @@ Instead, they offered me to join a different track, working on an **Open-Source*
 It serves as a way to set up a production level code with Data Science and DevOps principles. 
 They work with all major frameworks like Tensorflow and PyTorch.
 
-It is a much better fit to my interested in Machine Learning and getting more skills in Data Science than developing website features at GitHub[^1]
+It is a much better fit to my interest in Machine Learning and getting more skills in Data Science than developing website features at GitHub[^1]
 
 ## Reflection
 
 So even though getting ~~kicked out~~ rejected from the GitHub Externship this semester wasn't anticipated, 
 things still went well for me.
 
-I just hope this will help someone who is looking for a little inspiration.
+I just hope this will help someone who is looking for a little inspiration. Change of plan is usually meant to be.
+
+## Edit
+
+I'm currently two weeks into my Open Source Fellowship experience with BentoML.
+Working on this project is so inspiring, and I couldn't wish for anything more. 
+
+Truly makes me glad that things turned out this way.
 
 ---
 {: data-content="footnotes"}
 
-[^1]: Although I'm sure they have departments involved in ML
+[^1]: Although I'm sure they have departments doing Data Science.
