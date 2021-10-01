@@ -21,8 +21,14 @@ entries:
     post_list:
       category: experience
       show_more: true
-      show_more_text: See more projects...
-      show_more_url: work-archive.html
+      show_more_text: See more work experience...
+      show_more_url: archive.html
+  - title: projects
+    post_list:
+      category: projects
+      show_more: true
+      show_more_text: See more projects
+      sow_more_url: archive.html
 
   - title: links
     entries:
@@ -32,6 +38,11 @@ entries:
         url: https://www.linkedin.com/in/damirtemir/
       - title: medium
         url: https://damirtemir.medium.com/
+
+  - title: hobbies
+    entries:
+      - title: hackathons
+        url: hackathons
 
   - title: rss
     url: feed.xml
