@@ -1,16 +1,45 @@
 entries:
   - title: Local Hack Day Build 2021
-    url: https://organize.mlh.io/participants/events/6072-local-hack-day-build
     entries:
-      - title: Major League Hacking
-      - title: ESTechies Guild
+      - title: January, 2021
+      - title: Devpost
+        url: https://organize.mlh.io/participants/events/6072-local-hack-day-build
   - title: Local Hack Day Share 2021
-    url: https://local-hack-day-share.devpost.com/
     entries:
-      - title: Major League Hacking
-      - title: ESTechies Guild
+      - title: April, 2021
+      - title: Devpost
+        url: https://local-hack-day-share.devpost.com/
+  - title: University of Iowa Hackathon
+    entries:
+      - title: April, 2021
+      - title: Devpost
+        url: https://hackuiowa-2021.devpost.com/
+      - title: Bank Score
+        url: https://devpost.com/software/consumer-finance-complaints-ranking-and-analysis
   - title: INIT 2022
-    url: https://organize.mlh.io/participants/events/6813-init-2022
     entries:
-      - title: Major League Hacking
-      - title: ESTechies Guild
+      - title: June, 2021
+      - title: Devpost
+        url: https://organize.mlh.io/participants/events/6813-init-2022
+  - title: MLH Pre Fellowship Orientation Hackathon (Winner)
+    entries:
+      - title: July, 2021
+      - title: Devpost
+        url: https://pre-fellowship-orientation-3.devpost.com/
+      - title: Dark Mode Theme for the Template
+        url: https://devpost.com/software/dark-mode-theme-for-the-template
+  - title: MLH Pre Fellowship Project
+    entries:
+      - title: August, 2021
+      - title: Devpost
+        url: https://pre-fellowship-project-batch-3.devpost.com/
+      - title: GitCord
+        url: https://devpost.com/software/gitcord
+  - title: MLH Fellowship Orientation Hackathon (Winner)
+    entries:
+      - title: September, 2021
+      - title: Devpost
+        url: https://fellowship-orientation-batch-4.devpost.com/
+      - title: Fellowship Prediction
+        url: https://devpost.com/software/temp-j0e3tf
+
