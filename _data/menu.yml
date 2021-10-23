@@ -43,6 +43,8 @@ entries:
     entries:
       - title: hackathons
         url: hackathons
+      - title: conferences
+        url: conferences
 
   - title: rss
     url: feed.xml
