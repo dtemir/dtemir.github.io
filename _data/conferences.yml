@@ -6,6 +6,7 @@ entries:
         url: http://www.rosettadesigngroup.com/rosettacon/
       - title: Poster
         url: https://temir.dev/projects/rosetta-poster/poster
+      - title: Online
   - title: Purdue Engineering Virtual Graduate Showcase
     entries:
       - title: October, 2021
@@ -13,6 +14,7 @@ entries:
         url: https://engineering.purdue.edu/Engr/Academics/Graduate/graduate-showcase/index_html
       - title: Poster
         url: https://temir.dev/projects/rosetta-poster/poster
+      - title: Online
   - title: Virtual Midwest/West URSCA Conference
     entries:
       - title: November, 2021
@@ -20,10 +22,12 @@ entries:
         url: https://coplac.org/calendar/
       - title: Poster
         url: https://temir.dev/projects/rosetta-poster/poster
-  - title: Computational Design and Modeling of Biomolecules
+      - title: Online
+  - title: Keystone Symposia on Molecular and Cellular Biology
     entries:
       - title: February, 2021
       - title: Website
         url: https://www.keystonesymposia.org/ks/Online/Events/2022J8/Modeling-Biomolecules-Computational-Design.aspx?EventKey=2022J8
       - title: Poster
         url: https://temir.dev/projects/rosetta-poster/poster
+      - title: Cancelled (Omicron)
