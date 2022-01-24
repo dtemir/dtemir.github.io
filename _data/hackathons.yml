@@ -21,25 +21,33 @@ entries:
       - title: June, 2021
       - title: Devpost
         url: https://organize.mlh.io/participants/events/6813-init-2022
-  - title: MLH Pre Fellowship Orientation Hackathon (Winner)
+  - title: MLH Pre Fellowship Orientation Hackathon (winner)
     entries:
       - title: July, 2021
       - title: Devpost
         url: https://pre-fellowship-orientation-3.devpost.com/
       - title: Dark Mode Theme for the Template
         url: https://devpost.com/software/dark-mode-theme-for-the-template
-  - title: MLH Pre Fellowship Project
+      - title: Amazon Echo Dot + Stickers
+  - title: MLH Pre Fellowship Project Hackathon
     entries:
       - title: August, 2021
       - title: Devpost
         url: https://pre-fellowship-project-batch-3.devpost.com/
       - title: GitCord
         url: https://devpost.com/software/gitcord
-  - title: MLH Fellowship Orientation Hackathon (Winner)
+  - title: MLH Fellowship Orientation Hackathon (winner)
     entries:
       - title: September, 2021
       - title: Devpost
         url: https://fellowship-orientation-batch-4.devpost.com/
       - title: Fellowship Prediction
         url: https://devpost.com/software/temp-j0e3tf
+      - title: Amazon Echo Dot + Stickers
+  - title: MLH Internal Hackathon (winner)
+    entries:
+      - title: December, 2021
+      - title: Discord Actions Bot
+        url: https://github.com/wei/discord-actions-bot
+      - title: Amazon Gift Card $75 + T-shirt
 
